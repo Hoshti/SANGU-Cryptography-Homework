@@ -1,0 +1,66 @@
+TLS Handshake Explanation
+
+1. Client Hello: 
+   - Client sends supported TLS versions, cipher suites, and random number
+   - May include SNI (Server Name Indication)
+
+2. Server Hello:
+   - Server selects TLS version and cipher suite
+   - Sends its random number
+
+3. Certificate:
+   - Server sends its digital certificate
+   - Contains public key and identity information
+
+4. Server Key Exchange (if needed):
+   - For key exchange algorithms like DH/ECDHE
+
+5. Server Hello Done:
+   - Indicates server is finished with handshake negotiation
+
+6. Client Key Exchange:
+   - Client generates pre-master secret
+   - Encrypts with server's public key (RSA) or uses DH parameters
+
+7. Change Cipher Spec:
+   - Both sides switch to encrypted communication
+
+8. Finished:
+   - First encrypted message verifying handshake was successful
+
+
+MITM Protection Mechanisms
+
+1. Certificate Validation:
+   - Client verifies server certificate against trusted CAs
+   - Checks certificate chain, expiration, and domain match
+
+2. Asymmetric Cryptography:
+   - Only the real server has the private key matching the certificate
+
+3. Perfect Forward Secrecy (with ECDHE/DHE):
+   - Ephemeral keys ensure past sessions can't be decrypted
+
+4. Message Authentication:
+   - HMAC ensures message integrity
+
+5. Encrypted Handshake:
+   - Prevents modification of handshake parameters
+
+TLS Application in Website
+
+1. HTTPS Connection:
+   - All communication encrypted between client and server
+   - Protects against eavesdropping and tampering
+
+2. Data Integrity:
+   - Ensures data isn't modified in transit
+
+3. Authentication:
+   - Verifies server identity to prevent impersonation
+
+4. Mixed Content Protection:
+   - Modern browsers block insecure resources on HTTPS pages
+
+5. HSTS:
+   - Websites can enforce HTTPS-only connections

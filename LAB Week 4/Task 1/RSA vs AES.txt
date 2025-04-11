@@ -1,0 +1,22 @@
+RSA vs AES Comparison
+
+RSA (Asymmetric):
+- Uses public/private key pair
+- Slower for encrypting large amounts of data
+- Typically used for encrypting small data like symmetric keys
+- Key sizes are larger (2048-bit or more for security)
+- Encryption/decryption requires more computational power
+- Ideal for key exchange and digital signatures
+
+AES (Symmetric):
+- Uses a single shared key
+- Much faster for encrypting large amounts of data
+- Used for bulk data encryption
+- Key sizes are smaller (128/192/256-bit)
+- Less computationally intensive
+- Requires secure key exchange mechanism
+
+Use Cases:
+- RSA is best for securely exchanging keys or small data
+- AES is best for encrypting large files or data streams
+- Common practice: Use RSA to encrypt an AES key, then use AES to encrypt the actual data

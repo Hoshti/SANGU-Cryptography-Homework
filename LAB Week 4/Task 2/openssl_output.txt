@@ -1,0 +1,117 @@
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN = www.top.ge
+   i:C = US, O = Let's Encrypt, CN = R11
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Mar  1 07:19:21 2025 GMT; NotAfter: May 30 07:19:20 2025 GMT
+-----BEGIN CERTIFICATE-----
+MIIE7DCCA9SgAwIBAgISA/UhJGgZ6D7bmP4Ou/86MN7iMA0GCSqGSIb3DQEBCwUA
+MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD
+EwNSMTEwHhcNMjUwMzAxMDcxOTIxWhcNMjUwNTMwMDcxOTIwWjAVMRMwEQYDVQQD
+Ewp3d3cudG9wLmdlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo22V
+Y6sCQ1tS+R8Ngl5WdpcTr6R6lu3cimRtLd8L+Mz0VMvjrhHpdg5xQ+hs6sqC1Yw3
+JWT3G9TZ+N/OYWIZn3xpcnG2SvFTAdiZgZQT7YdoMmaw95y0ywTlWIRTHCsDRTtc
+JLp4GBNciahE8zzM0eX6rxBjgkFeWD15TKi7G42CPvkEvfD068w4DDXcxcPl230K
+ac4y4AxxNnEC9rRGzk6lN3f9giHLhAgb+t8kbkY5HJA2WKh+EKveqlKnhfP3NaLQ
+hOmr45Ce/n8xHJNQOJMm2zr45ooe8BW40dvNKQg3NOFUB9bZkkiIidJwvkroLQzM
+/7RjJwRUbX0Bnbub/wIDAQABo4ICFjCCAhIwDgYDVR0PAQH/BAQDAgWgMB0GA1Ud
+JQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQW
+BBSfCBJImNeJ7fk8EnQBL8qE29x7FDAfBgNVHSMEGDAWgBTFz0ak6vTDwHpslcQt
+sF6SLybjuTBXBggrBgEFBQcBAQRLMEkwIgYIKwYBBQUHMAGGFmh0dHA6Ly9yMTEu
+by5sZW5jci5vcmcwIwYIKwYBBQUHMAKGF2h0dHA6Ly9yMTEuaS5sZW5jci5vcmcv
+MB0GA1UdEQQWMBSCBnRvcC5nZYIKd3d3LnRvcC5nZTATBgNVHSAEDDAKMAgGBmeB
+DAECATCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB3AE51oydcmhDDOFts1N8/Uusd
+8OCOG41pwLH6ZLFimjnfAAABlVDIfbQAAAQDAEgwRgIhAKAQKyd5P+adwF7X7WzM
+cuvlUwIzHtO6n/EHkD66Jq/+AiEA/w9vdWm/y/jOhZcdhCyyIoDOgC3c9paBVP6Z
+eQ5SzhwAdQCi4wrkRe+9rZt+OO1HZ3dT14JbhJTXK14bLMS5UKRH5wAAAZVQyIWJ
+AAAEAwBGMEQCIAC+qaHcnPcjcBB66wYAoeFCiojLA+y8zQbz9GulhFdhAiAjXLPy
+MRMaxHUKN8zzCh+ZIreD7YyyU1l6S4a9F0xcmjANBgkqhkiG9w0BAQsFAAOCAQEA
+VLoxycq1rlvY1uBdSEccCO34IDEXgzs/J1SIftBBsPYq4Qq11yMTFyPD1D1/24uD
+/Ys9JpvWShpAHC714i0/+XjWF8/Plm1AtfbF7kyWnc/dznoxKgYoWVJiX/CYKaKG
+2HkjD1OE9T1/Srn5R299lx1A5jjNbatDLK3JgF2n30uodKClxri2kfJ1tQ9brKcf
+aGG8otL2AhuVdrVQAWD8WL3V8w8gEPvjKq2UMSq5/CxWWF6btFCacZ/k2HZ5jCkO
+yAMe/uIzTsMVi7MbalvFBjwaz6+DJsA0b+84Gyw9SLqtOX0mhn4GPU95YPCN9UAn
+MTljAMO7YSk4zAnQFPD5AQ==
+-----END CERTIFICATE-----
+ 1 s:C = US, O = Let's Encrypt, CN = R11
+   i:C = US, O = Internet Security Research Group, CN = ISRG Root X1
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Mar 13 00:00:00 2024 GMT; NotAfter: Mar 12 23:59:59 2027 GMT
+-----BEGIN CERTIFICATE-----
+MIIFBjCCAu6gAwIBAgIRAIp9PhPWLzDvI4a9KQdrNPgwDQYJKoZIhvcNAQELBQAw
+TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh
+cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjQwMzEzMDAwMDAw
+WhcNMjcwMzEyMjM1OTU5WjAzMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg
+RW5jcnlwdDEMMAoGA1UEAxMDUjExMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAuoe8XBsAOcvKCs3UZxD5ATylTqVhyybKUvsVAbe5KPUoHu0nsyQYOWcJ
+DAjs4DqwO3cOvfPlOVRBDE6uQdaZdN5R2+97/1i9qLcT9t4x1fJyyXJqC4N0lZxG
+AGQUmfOx2SLZzaiSqhwmej/+71gFewiVgdtxD4774zEJuwm+UE1fj5F2PVqdnoPy
+6cRms+EGZkNIGIBloDcYmpuEMpexsr3E+BUAnSeI++JjF5ZsmydnS8TbKF5pwnnw
+SVzgJFDhxLyhBax7QG0AtMJBP6dYuC/FXJuluwme8f7rsIU5/agK70XEeOtlKsLP
+Xzze41xNG/cLJyuqC0J3U095ah2H2QIDAQABo4H4MIH1MA4GA1UdDwEB/wQEAwIB
+hjAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwEgYDVR0TAQH/BAgwBgEB
+/wIBADAdBgNVHQ4EFgQUxc9GpOr0w8B6bJXELbBeki8m47kwHwYDVR0jBBgwFoAU
+ebRZ5nu25eQBc4AIiMgaWPbpm24wMgYIKwYBBQUHAQEEJjAkMCIGCCsGAQUFBzAC
+hhZodHRwOi8veDEuaS5sZW5jci5vcmcvMBMGA1UdIAQMMAowCAYGZ4EMAQIBMCcG
+A1UdHwQgMB4wHKAaoBiGFmh0dHA6Ly94MS5jLmxlbmNyLm9yZy8wDQYJKoZIhvcN
+AQELBQADggIBAE7iiV0KAxyQOND1H/lxXPjDj7I3iHpvsCUf7b632IYGjukJhM1y
+v4Hz/MrPU0jtvfZpQtSlET41yBOykh0FX+ou1Nj4ScOt9ZmWnO8m2OG0JAtIIE38
+01S0qcYhyOE2G/93ZCkXufBL713qzXnQv5C/viOykNpKqUgxdKlEC+Hi9i2DcaR1
+e9KUwQUZRhy5j/PEdEglKg3l9dtD4tuTm7kZtB8v32oOjzHTYw+7KdzdZiw/sBtn
+UfhBPORNuay4pJxmY/WrhSMdzFO2q3Gu3MUBcdo27goYKjL9CTF8j/Zz55yctUoV
+aneCWs/ajUX+HypkBTA+c8LGDLnWO2NKq0YD/pnARkAnYGPfUDoHR9gVSp/qRx+Z
+WghiDLZsMwhN1zjtSC0uBWiugF3vTNzYIEFfaPG7Ws3jDrAMMYebQ95JQ+HIBD/R
+PBuHRTBpqKlyDnkSHDHYPiNX3adPoPAcgdF3H2/W0rmoswMWgTlLn1Wu0mrks7/q
+pdWfS6PJ1jty80r2VKsM/Dj3YIDfbjXKdaFU5C+8bhfJGqU3taKauuz0wHVGT3eo
+6FlWkWYtbt4pgdamlwVeZEW+LM7qZEJEsMNPrfC03APKmZsJgpWCDWOKZvkZcvjV
+uYkQ4omYCTX5ohy+knMjdOmdH9c7SpqEWBDC86fiNex+O0XOMEZSa8DA
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=CN = www.top.ge
+issuer=C = US, O = Let's Encrypt, CN = R11
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Peer signature type: RSA
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 3218 bytes and written 401 bytes
+Verification: OK
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: 5EA553A8D22915B3A303E5EEAD93456294BD10E8CD9D303648E4ED12690483B9
+    Session-ID-ctx: 
+    Master-Key: E854D174890E709F4B8862C0F65F6B94BEE2AE1207AC8B2507A5262C97FF04C4E7E73904CE3CA1FF3D7DDED83339A70D
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - c2 62 bb 8a ba 28 82 b0-df c1 fb 09 fc aa 60 4a   .b...(........`J
+    0010 - d8 5a 13 2e cc 3c 24 42-3e 03 0d fc a5 5d 53 6e   .Z...<$B>....]Sn
+    0020 - 64 24 5f 21 ed 8a 81 cb-a1 76 e5 be 8e ac 9c fd   d$_!.....v......
+    0030 - 0d a9 70 67 50 63 c8 e5-ba 2c c4 e7 a3 20 27 be   ..pgPc...,... '.
+    0040 - 5a 53 7f 5d ee 64 2e 30-f3 84 d6 4d ed 59 65 8e   ZS.].d.0...M.Ye.
+    0050 - 16 41 41 9d 82 d0 0e 19-f8 f5 e5 fd 9e 98 0b 60   .AA............`
+    0060 - 38 b6 09 04 20 9f bb 1e-c6 c8 8f 0c 30 e2 a5 28   8... .......0..(
+    0070 - ff 8d 3d 64 74 4d 78 b2-c5 7c 23 71 60 df 9b 69   ..=dtMx..|#q`..i
+    0080 - 6d ec 21 1b 71 f9 80 fd-e6 ed 97 7d a9 d4 64 3e   m.!.q......}..d>
+    0090 - aa 32 79 6e 20 83 e9 2a-5e 42 04 f7 11 63 a4 ed   .2yn ..*^B...c..
+    00a0 - 50 0c 9f 8c 24 a7 12 86-8d 16 b2 73 7b 80 3d 10   P...$......s{.=.
+    00b0 - ef f2 82 aa c5 12 c5 82-93 45 90 09 ed 69 ce 75   .........E...i.u
+
+    Start Time: 1744382046
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: yes
+---
