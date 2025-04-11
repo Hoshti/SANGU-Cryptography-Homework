@@ -1,0 +1,27 @@
+    What Happened:
+
+        The HMAC changed completely when we modified just one character (v → V)
+
+        This demonstrates the avalanche effect of cryptographic hash functions
+
+    Why HMAC is Important:
+
+        Authentication: Verifies the message came from someone with the secret key
+
+        Integrity: Any modification of the data (even 1 bit) changes the HMAC completely
+
+        Security: Without the secret key, attackers can't forge valid HMACs
+
+        Tamper Detection: Used to verify data hasn't been altered in transit/storage
+
+    Practical Applications:
+
+        API authentication
+
+        Message verification in protocols
+
+        File integrity checks
+
+        Secure cookie generation
+
+The HMAC provides both authenticity and integrity checking in one operation, making it superior to simple hashing when you need to verify the source of the data.

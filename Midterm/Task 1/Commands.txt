@@ -1,0 +1,6 @@
+1. echo "This file contains top secret information." > secret.txt
+2. cat secret.txt
+3. openssl enc -aes-128-cbc -salt -in secret.txt -out secret.enc
+4. openssl enc -aes-128-cbc -d -in secret.enc -out secret.dec
+5. cat secret.dec
+6. diff secret.txt secret.dec

@@ -1,0 +1,8 @@
+1. openssl dhparam -out dhparams.pem 2048
+2. openssl genpkey -paramfile dhparams.pem -out alice_priv.pem
+3. openssl pkey -in alice_priv.pem -pubout -out alice_pub.pem
+4. openssl genpkey -paramfile dhparams.pem -out bob_priv.pem
+5. openssl pkey -in bob_priv.pem -pubout -out bob_pub.pem
+6. openssl pkeyutl -derive -inkey bob_priv.pem -peerkey alice_pub.pem -out bob_shared_secret.bin
+7. openssl pkeyutl -derive -inkey bob_priv.pem -peerkey alice_pub.pem -out bob_shared_secret.bin
+8. cmp alice_shared_secret.bin bob_shared_secret.bin && echo "Shared secrets match!" || echo "Error: Shared secrets differ!"

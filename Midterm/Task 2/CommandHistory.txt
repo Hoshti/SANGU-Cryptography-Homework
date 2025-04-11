@@ -1,0 +1,7 @@
+1. openssl ecparam -name prime256v1 -genkey -noout -out ecc_private.pem
+2. openssl ec -in ecc_private.pem -pubout -out ecc_public.pem
+3. openssl ec -in ecc_private.pem -noout -text
+4. openssl ec -pubin -in ecc_public.pem -noout -text
+5. echo "Elliptic Curves are efficient." > ecc.txt
+6. openssl dgst -sha256 -sign ecc_private.pem -out ecc_signature.bin ecc.txt
+7. openssl dgst -sha256 -verify ecc_public.pem -signature ecc_signature.bin ecc.txt

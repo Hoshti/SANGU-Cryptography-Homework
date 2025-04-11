@@ -1,0 +1,29 @@
+Where is Diffie-Hellman Used?
+
+    TLS Handshake (HTTPS, VPNs, SSH)
+
+        Used in Ephemeral Diffie-Hellman (DHE) or Elliptic Curve DH (ECDHE) to establish a secure session key.
+
+        Prevents retrospective decryption (even if the server’s private key is later compromised, past sessions remain secure).
+
+    Secure Messaging (Signal Protocol, WhatsApp, OTR)
+
+        Ensures forward secrecy, meaning each session has a unique key.
+
+        Protects against man-in-the-middle (MITM) attacks when combined with authentication.
+
+    IPSec (VPN Encryption)
+
+        Used in IKE (Internet Key Exchange) to securely negotiate encryption keys.
+
+Why is DH Important for Secure Communication?
+
+    No Need to Pre-Share Keys: Unlike symmetric encryption, DH allows two parties to generate a shared secret without ever transmitting it.
+
+    Forward Secrecy: Temporary session keys prevent mass decryption if a long-term key is compromised.
+
+    Resistant to Eavesdropping: Even if an attacker intercepts public keys, they cannot compute the shared secret without a private key.
+
+Conclusion
+
+Diffie-Hellman enables secure key exchange in modern encryption protocols, ensuring confidentiality and integrity in internet communications. Its variants (ECDHE) are widely used in TLS, messaging apps, and VPNs.
