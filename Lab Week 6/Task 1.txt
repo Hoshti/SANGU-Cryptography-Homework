@@ -1,0 +1,25 @@
+1. Analyze the padding_oracle function. How does it determine if padding is valid?
+
+    - The padding_oracle function simulates a server endpoint that attempts to decrypt the provided ciphertext.
+    - It first checks if the ciphertext length is a multiple of the BLOCK_SIZE. If not, it immediately returns False because valid CBC ciphertext (including IV) must have a length that's a multiple of the block size.
+    - It splits the input ciphertext into an Initialization Vector (iv, the first block) and the actual encrypted blocks (ct).
+    - It initializes an AES-CBC cipher using the secret KEY and the provided iv.
+    - It decrypts the ct using the cipher.
+    - Crucially, it then uses cryptography.hazmat.primitives.padding.PKCS7(BLOCK_SIZE * 8).unpadder() to attempt to remove the PKCS#7 padding from the decrypted result.
+    - The unpadder.finalize() method will raise a ValueError if the decrypted data does not end with valid PKCS#7 padding (e.g., incorrect padding bytes, incorrect padding length indicated by the last byte).
+    - The function wraps the decryption and unpadding process in a try...except (ValueError, TypeError) block. If no exception occurs during decryption and unpadding, it means the padding was valid, and the function returns True. If any ValueError or TypeError occurs (most likely the ValueError from unpadder.finalize()), it indicates invalid padding (or another decryption issue), and the function returns False.
+    - In essence, it determines padding validity by attempting the standard PKCS#7 unpadding process and returning True only if that process completes without errors.
+
+2. What is the purpose of the IV in CBC mode?
+
+    - The Initialization Vector (IV) is used in Cipher Block Chaining (CBC) mode to introduce randomness and ensure that encrypting the same plaintext multiple times with the same key results in different ciphertexts.
+    - In CBC decryption, the IV is XORed with the result of decrypting the first ciphertext block to produce the first plaintext block: Plaintext_1 = Decrypt(Key, Ciphertext_1) XOR IV.
+    - For subsequent blocks, the previous ciphertext block acts like the IV for the current block: Plaintext_N = Decrypt(Key, Ciphertext_N) XOR Ciphertext_(N-1).
+    - The IV must be unique for each encryption session with the same key but does not need to be kept secret. It is typically prepended to the ciphertext.
+
+3. Why does the ciphertext need to be a multiple of the block size?
+
+    - AES (and block ciphers in general) operate on fixed-size blocks of data (16 bytes for AES).
+    - CBC mode requires the input plaintext to be processed in full blocks. If the original plaintext isn't naturally a multiple of the block size, padding (like PKCS#7) is added to make it so before encryption.
+    - The encryption process (IV + Ciphertext blocks) inherently produces an output that is a multiple of the block size. The ciphertext provided to the padding_oracle includes the IV as the first block, maintaining the requirement that the total length is a multiple of the block size (specifically, (number_of_encrypted_blocks + 1) * BLOCK_SIZE).
+    - If the input to the decryption function (like our oracle) isn't a multiple of the block size, the decryption process cannot be correctly performed block by block according to the CBC definition, hence the initial check in the padding_oracle function.
