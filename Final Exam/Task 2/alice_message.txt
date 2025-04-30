@@ -1,0 +1,3 @@
+This file contains sensitive data for Bob.
+Timestamp: 20e0f2f983698c40
+End of message.

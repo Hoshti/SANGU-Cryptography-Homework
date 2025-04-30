@@ -1,0 +1,9 @@
+Manual Obfuscation (Type: Layout & Data Obfuscation):
+
+What was done: Variable names (n, result, i) and the function name (factorial) were changed to meaningless or generic ones (a_param, r_val, x_iter, f_obfs1). The informative docstring and comments were removed. Whitespace might be minimally altered (though not aggressively here).
+    
+Why: This type primarily targets human readability. It makes it harder for someone casually reading the code to understand its purpose, logic, and the role of each variable without spending significant time tracing execution. It's a low-level deterrent, easily defeated by methodical analysis but effective against quick glances. It falls under:
+        
+Layout Obfuscation: Removing comments, altering formatting.
+        
+Data Obfuscation: Renaming identifiers (variables, functions).

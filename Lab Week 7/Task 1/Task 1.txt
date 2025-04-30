@@ -1,0 +1,10 @@
+Explanation of Changes:
+
+Forced Malicious Prover: Inside the loop, knows_password is explicitly set to False. This ensures every trial simulates a prover who doesn't know the secret and must guess.
+    
+Success Condition: The logic success = (path_entered == challenge) correctly models the malicious prover's success – they only succeed if their random choice of path happens to match the verifier's random challenge.
+    
+Tracking and Probability: The malicious_success_count tracks only the successes achieved by guessing. The final output calculates and prints the probability (malicious_success_count / trials).
+    
+Expected Outcome:
+Since both the prover's path choice and the verifier's challenge are random binary choices ('A' or 'B'), a malicious prover has a 50% (0.5) chance of guessing correctly in any single trial. Over 20 trials, we expect the number of successes to be around 10, and the calculated probability to be close to 0.50. Random fluctuations mean it might not be exactly 0.50 in every run of 20 trials.

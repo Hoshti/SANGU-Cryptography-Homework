@@ -1,0 +1,4 @@
+This is the original file content.
+It contains multiple lines.
+Used for testing the hashing utility in Task 5.
+Do not modify this file directly for the 'tampered' test.

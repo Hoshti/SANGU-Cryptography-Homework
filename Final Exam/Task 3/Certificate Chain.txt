@@ -1,0 +1,17 @@
+Certificate chain
+ 0 s:CN = *.google.com
+   i:C = US, O = Google Trust Services, CN = WE2
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Mar 31 08:54:37 2025 GMT; NotAfter: Jun 23 08:54:36 2025 GMT
+-----BEGIN CERTIFICATE-----
+-----END CERTIFICATE-----
+ 1 s:C = US, O = Google Trust Services, CN = WE2
+   i:C = US, O = Google Trust Services LLC, CN = GTS Root R4
+   a:PKEY: id-ecPublicKey, 256 (bit); sigalg: ecdsa-with-SHA384
+   v:NotBefore: Dec 13 09:00:00 2023 GMT; NotAfter: Feb 20 14:00:00 2029 GMT
+-----BEGIN CERTIFICATE-----
+-----END CERTIFICATE----- 
+ 2 s:C = US, O = Google Trust Services LLC, CN = GTS Root R4
+   i:C = BE, O = GlobalSign nv-sa, OU = Root CA, CN = GlobalSign Root CA
+   a:PKEY: id-ecPublicKey, 384 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Nov 15 03:43:21 2023 GMT; NotAfter: Jan 28 00:00:42 2028 GMT

@@ -1,0 +1,23 @@
+In CMD
+
+
+python hash_util.py original.txt
+
+--- Checking integrity for: original.txt ---
+Computed Hashes:
+  SHA256: 0e87846bbbe9797f90c481d4656fc56a35f33b17349c35254e1a0c9b64757272
+  SHA1: a5f98291d1e7eeead3293fc816646eaa2f50f488
+  MD5: b19f6a0005f63304b943f55111969748
+[INFO] No previous hashes found for 'original.txt' in hashes.json.
+[INFO] Storing current hashes as baseline.
+
+python hash_util.py tampered.txt
+
+--- Checking integrity for: tampered.txt ---
+Computed Hashes:
+  SHA256: 8f678d5e28fee8d27970db8d712f94d215ed2ca79c0559b02a344e0c6c900d27
+  SHA1: 4a4a202f2d7b43a2bc177e97b2b17629282c60da
+  MD5: eb2408d7edb1cfcffbc93342dbe45a70
+[INFO] No previous hashes found for 'tampered.txt' in hashes.json.
+[INFO] Storing current hashes as baseline.
+PS C:\Users\Lasha.Gogilava\Desktop\Final Exam\Task 5>
